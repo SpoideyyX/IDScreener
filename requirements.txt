@@ -1,0 +1,32 @@
+# AI-Based Fake Identity and Document Screening System
+# Tested with Python 3.10 / 3.11 (avoid 3.12 for now — some CV/ML wheels lag behind)
+
+# --- Core numerical / CV stack ---
+numpy==1.26.4
+opencv-python==4.10.0.84
+Pillow==10.4.0
+scikit-image==0.24.0
+scikit-learn==1.5.1
+pandas==2.2.2
+matplotlib==3.9.1
+
+# --- OCR ---
+easyocr==1.7.1
+pytesseract==0.3.10        # optional fallback; needs system Tesseract binary installed separately
+
+# --- Face detection / embeddings ---
+deepface==0.0.93
+tf-keras==2.17.0           # deepface pulls a keras backend; pin to avoid keras 3 breakage
+retina-face==0.0.17        # deepface's default detector backend, pinned for stability
+
+# --- Deep learning (only needed if you go CNN route for ELA classifier) ---
+torch==2.4.0
+torchvision==0.19.0
+
+# --- Web dashboard ---
+streamlit==1.38.0
+plotly==5.24.1              # trust-score gauge chart
+
+# --- Utilities ---
+joblib==1.4.2
+tqdm==4.66.5

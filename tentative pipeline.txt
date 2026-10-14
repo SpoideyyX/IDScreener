@@ -1,0 +1,17 @@
+[Document Image & Live Selfie]
+              │
+              ├──► [1. ELA Detector] ──────► Tampering Score (45%)
+              │
+              ├──► [2. OCR Validator] ────► Field Validity Score (25%)
+              │
+              └──► [3. Face Verifier] ────► Biometric Match Score (30%)
+                              │
+                              ▼
+                 [4. Multi-Modal Trust Scorer]
+                              │
+                              ▼
+                     [Final Authenticity Score]
+          (GENUINE ≥ 75% | SUSPICIOUS 45-74% | FRAUDULENT < 45%)
+                              │
+                              ▼
+                 [5. Streamlit Dashboard UI]
